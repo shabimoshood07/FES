@@ -1,11 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Sansita } from "next/font/google";
 import { NextUiProvider } from "@/components/NextUiProvider";
 import NavbarComponent from "@/components/Navbar";
 // "Source Sans Pro", sans-serif
 
 const inter = Inter({ subsets: ["latin"] });
+const sansita = Sansita({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavbarComponent />
-        <NextUiProvider>{children}</NextUiProvider>
+        <NextUiProvider>
+          <NavbarComponent />
+          {children}
+        </NextUiProvider>
       </body>
     </html>
   );
