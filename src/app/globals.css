@@ -85,3 +85,8 @@
 header {
   @apply md:!flex-col;
 }
+
+.hero-text {
+  @apply text-[35px] md:text-[50px] tracking-widest;
+}
+

@@ -13,7 +13,7 @@ const HeroText = ({ text }: { text: string }) => {
     }),
   };
 
-// 
+
 
   const child = {
     visible: {
@@ -49,7 +49,14 @@ const HeroText = ({ text }: { text: string }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", fontSize: "2rem", flexWrap:"wrap", fontWeight:"bold" }}
+      style={{
+        overflow: "hidden",
+        display: "flex",
+        fontSize: "2rem",
+        flexWrap: "wrap",
+        fontWeight: "bold",
+        padding: "10px",
+      }}
       variants={container}
       initial="hidden"
       animate="visible"
@@ -57,8 +64,12 @@ const HeroText = ({ text }: { text: string }) => {
       {words.map((word, index) => (
         <motion.span
           variants={child} //
-          style={{ marginRight: "5px", fontSize:"50px" }}
+          style={{
+            marginRight: "5px",
+            letterSpacing: "-1px",
+          }}
           key={index}
+          className="hero-text"
         >
           {word}
         </motion.span>
