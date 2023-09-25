@@ -55,7 +55,7 @@ const HeroText = ({ text }: { text: string }) => {
     >
       {words.map((word, index) => (
         <motion.span
-          variants={child} //
+          variants={child}
           style={{
             marginRight: "6px",
             letterSpacing: "-.9px",

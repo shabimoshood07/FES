@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 const dept = [
   {
@@ -41,17 +42,108 @@ const dept = [
   },
 ];
 
+// const container = {
+//   hidden: { opacity: 0 },
+//   visible: (i = 1) => ({
+//     opacity: 1,
+//     transition: { staggerChildren: 0.12, delayChildren: 0.05 * i },
+//   }),
+// };
+
+// visible: {
+//   opacity: 1,
+//   scale: 1,
+//   transition: {
+//     delayChildren: 0.3,
+//     staggerChildren: 0.2,
+//   },
+// },
+
+// const child = {
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       type: "spring",
+//       damping: 12,
+//       stiffness: 100,
+//     },
+//   },
+//   hidden: {
+//     opacity: 0,
+//     y: [50, -100],
+//     transition: {
+//       type: "spring",
+//       damping: 12,
+//       stiffness: 100,
+//     },
+//   },
+// };
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { staggerChildren: 0.2, delayChildren: 0.5 * i },
+  }),
+};
+
+const child = {
+  // hidden: { y: [50, -100], opacity: 0 },
+  offscreen: {
+    scale: 0,
+    opacity: 0,
+    y: [50, -100, 50],
+  },
+  // visible: {
+  //   y: 0,
+  //   opacity: 1,
+  // },
+};
+
 const Departments = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
     <div className=" bg-white text-slate-100 py-10 px-4 min-h-[calc(100vh-90px)] md:min-h-[calc(100vh-126px)]">
       <div className="mx-auto max-w-5xl">
-        <h1 className="section-heading  text-slate-950 mb-6">Departments</h1>
+        <motion.h1 className="section-heading  text-slate-950 mb-6">
+          Departments
+        </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2   gap-12 justify-center items-center ">
+        <motion.div
+          variants={container}
+          // variants={isInView ? container : undefined}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center "
+          // ref={ref}
+          style={{
+            // transform: isInView ? "none" : "translateY(200px)",
+            transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .1s",
+            overflow: "hidden",
+          }}
+        >
           {dept.map((dep, index) => {
             return (
-              <div
+              <motion.div
                 key={index}
+                // variants={isInView ? child : undefined}
+                variants={child}
+                initial="offscreen"
+                whileInView={{
+                  scale: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    bounce: 0.4,
+                    duration: 1.8,
+                  },
+                  opacity: 1,
+                }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="relative group overflow-hidden bg-slate-950 min-h-[200px] rounded-lg  shadow-2xl p-4 flex flex-col items-center justify-center"
               >
                 <h1 className="text-center group-hover:-translate-x-[500%] duration-500 font-bold text-[20px] flex items-center justify-center gap-3">
@@ -80,10 +172,10 @@ const Departments = () => {
                     </Link>
                   </motion.button>
                 </footer>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

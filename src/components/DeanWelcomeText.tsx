@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -11,22 +9,9 @@ const welcomeText =
 
 function DeanWelcomeText() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0 });
+  const isInView = useInView(ref, { once: true });
 
   return (
-    // <motion.div
-    //   className="pt-2 pb-8 bg-slate-300 px-4"
-    //   animate={{ y: [0, 100, 0] }}
-    //   //   hidden={true}
-    //   transition={{
-    //     duration: 2,
-    //     ease: "easeInOut",
-    //     times: [0, 0.2, 0.5, 0.8, 1],
-    //     // repeat: Infinity,
-    //     // repeatDelay: 1,
-    //     // type: "spring",
-    //   }}
-    // >
     <div className="pb-10 bg-white px-4 min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-126px)]">
       <div
         style={{
