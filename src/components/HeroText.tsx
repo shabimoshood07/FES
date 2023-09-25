@@ -9,11 +9,9 @@ const HeroText = ({ text }: { text: string }) => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 0.01 * i },
+      transition: { staggerChildren: 0.12, delayChildren: 0.03 * i },
     }),
   };
-
-
 
   const child = {
     visible: {
@@ -36,15 +34,6 @@ const HeroText = ({ text }: { text: string }) => {
         stiffness: 100,
       },
     },
-    // end: {
-    //   y: -200,
-    //   opacity: 0,
-    //   transition: {
-    //     type: "spring",
-    //     damping: 12,
-    //     stiffness: 100,
-    //   },
-    // },
   };
 
   return (
@@ -56,6 +45,9 @@ const HeroText = ({ text }: { text: string }) => {
         flexWrap: "wrap",
         fontWeight: "bold",
         padding: "10px",
+        maxWidth: "1024px",
+        marginLeft: "auto",
+        marginRight: "auto",
       }}
       variants={container}
       initial="hidden"
@@ -65,8 +57,8 @@ const HeroText = ({ text }: { text: string }) => {
         <motion.span
           variants={child} //
           style={{
-            marginRight: "5px",
-            letterSpacing: "-1px",
+            marginRight: "6px",
+            letterSpacing: "-.9px",
           }}
           key={index}
           className="hero-text"

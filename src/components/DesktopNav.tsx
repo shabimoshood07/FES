@@ -29,7 +29,7 @@ const DesktopNav = () => {
       className="hidden md:flex"
       height="fit-content"
       classNames={{
-        wrapper:"px-0 gap-2 w-full max-w-none"
+        wrapper: "px-0 gap-2 w-full max-w-none",
       }}
     >
       <NavbarContent className="pr-3 mx-auto" justify="center">
@@ -46,13 +46,17 @@ const DesktopNav = () => {
       <nav className="bg-slate-500 text-slate-100 w-full ">
         <div className="hidden md:flex justify-between items-center py-4 mx-auto w-[95%] max-w-5xl">
           <div>
+            <Link href="/">Home</Link>
+          </div>
+
+          <div>
             <Link href="#">About the Faculty</Link>
           </div>
 
           <div>
             <HoverCard openDelay={200} closeDelay={100}>
               <HoverCardTrigger className="cursor-pointer flex items-center gap-4">
-                Departments{" "}
+                Departments
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -107,7 +111,7 @@ const DesktopNav = () => {
             </Link>
           </div>
           <div>
-            <Link className="w-full " href="#">
+            <Link className="w-full " href="#events">
               Events
             </Link>
           </div>

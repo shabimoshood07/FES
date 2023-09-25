@@ -1,12 +1,16 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Sansita } from "next/font/google";
+import { Inter, Sansita, Adamina } from "next/font/google";
 import { NextUiProvider } from "@/components/NextUiProvider";
 import NavbarComponent from "@/components/Navbar";
 // "Source Sans Pro", sans-serif
 
 const inter = Inter({ subsets: ["latin"] });
 const sansita = Sansita({
+  subsets: ["latin"],
+  weight: "400",
+});
+const adamina = Adamina({
   subsets: ["latin"],
   weight: "400",
 });
@@ -22,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth">
+      <body className={adamina.className}>
         <NextUiProvider>
           <NavbarComponent />
           {children}

@@ -87,6 +87,20 @@ header {
 }
 
 .hero-text {
-  @apply text-[35px] md:text-[50px] tracking-widest;
+  @apply text-[35px] md:text-[50px] lg:text-[60px] tracking-widest;
 }
 
+.section-heading {
+  @apply font-bold text-[25px] md:text-[35px] relative inline-block tracking-widest;
+}
+.section-heading::after {
+  @apply content-[''] h-[3px] w-full text-[20px] absolute rounded-xl -bottom-[3px] bg-slate-950 left-0;
+}
+
+
+/* .dept{
+  @apply
+} */
+/* .dept:hover ~ .dept-text{
+  @apply  duration-300 translate-x-8 text-red-800
+} */

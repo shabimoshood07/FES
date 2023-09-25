@@ -15,7 +15,6 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import DesktopNav from "./DesktopNav";
 import Image from "next/image";
 import React from "react";
@@ -49,7 +48,16 @@ const MobileNav = () => {
         />
       </NavbarContent>
 
-      <NavbarMenu className="!text-black  pt-10 md:hidden">
+      <NavbarMenu
+        className="!text-black  pt-10 md:hidden"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <NavbarMenuItem className="py-4">
+          <Link className="w-full " href="/">
+            <Link href="/">Home</Link>
+          </Link>
+        </NavbarMenuItem>
+        <Divider />
         <NavbarMenuItem className="py-4">
           <Link className="w-full" href="#">
             About the faculty
@@ -67,7 +75,10 @@ const MobileNav = () => {
             </NavbarMenuItem>
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="w-full text-sm nav-sublink relative" href="#">
+              <Link
+                className="w-full text-sm nav-sublink relative"
+                href="building-and-quantity-surveying"
+              >
                 Building / Quantity surveying
               </Link>
             </NavbarMenuItem>
@@ -86,6 +97,7 @@ const MobileNav = () => {
           </AccordionItem>
         </Accordion>
         <Divider />
+
         <NavbarMenuItem className="py-4">
           <Link className="w-full " href="#">
             Faculty news
@@ -93,7 +105,7 @@ const MobileNav = () => {
         </NavbarMenuItem>
         <Divider />
         <NavbarMenuItem className="py-4">
-          <Link className="w-full " href="#">
+          <Link className="w-full " href="#events">
             Events
           </Link>
         </NavbarMenuItem>
