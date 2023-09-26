@@ -104,3 +104,10 @@ header {
   @apply text-[20px] md:text-[30px] font-bold text-slate-950 py-4
 }
 
+.program-heading {
+  @apply font-bold text-[20px] md:text-[30px] relative inline-block tracking-widest;
+}
+.program-heading::after {
+  @apply content-[''] h-[3px] w-full absolute rounded-xl -bottom-[3px] bg-slate-950 left-0;
+}
+

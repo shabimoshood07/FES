@@ -1,40 +1,86 @@
 import {
-  Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
 const welcomeText =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsam? Libero, fugiat nulla pariatur voluptate repudiandae perferendis accusamus. Veritatis illo fuga id, inventore ab similique quibusdam et libero at culpa, animi quod dolorem voluptate vero. Repellat corrupti assumenda aliquam necessitatibus. Illo eum voluptates alias fugiat, sapiente voluptatem dignissimos nesciunt nulla, corporis laborum dolor reprehenderit aut? Quae necessitatibus distinctio a accusamus, ad quia esse perferendis nesciunt! Animi, psa. Corrupti ipsam voluptas, dolor nesciunt hic quidem? Officiis facere, ducimus delectus dolorum nostrum totam ratione, itaque in consequatur veritatis minima nisi consectetur at molestias eum illo aperiam accusamus id. Vitae odio dicta quam cum sunt eum, velit minima sed molestiae delectus accusantium impedit necessitatibus asperiores repellat culpa officia possimus. Laboriosam qui voluptas os odio saepe quos, nostrum fuga aut placeat vero officiis repellendus ullam asperiores dolorum, nisi rerum veritatis iste sit, accusamus rem veniam beatae. Laboriosam quae deserunt repellendus? Enim explicabo ipsam vero repudiandae beatae delectus libero maiores arum alias ex adipisci, numquam, consequatur minima dicta fugit eius laborum cupiditate quibusdam ipsa magnam veniam rem eligendi. Deleniti nobis est quibusdam? Eligendi quas non totam, voluptas pariatur facilis laboriosam. Tempore nihil repudiandae quae culpa veritatis quisquam itaque numquam excepturi debitis, magni at in ad.";
 
+const staffList = [
+  {
+    name: "Prof. James O. B. Rotimi",
+    image: "/BQS/HOD-BQS.png",
+    rank: "Head of Department",
+    programme: "Building/QS",
+  },
+  {
+    name: "AGBOOLA Shamsudeen A",
+    image: "/BQS/shamsudeen.jpg",
+    rank: "Lecturer II",
+    programme: "Building",
+  },
+  {
+    name: "Shabi M.O",
+    image: "/BQS/moshood.jpg",
+    rank: "Assistant Lecturer",
+    programme: "Building",
+  },
+  {
+    name: "BASHIR Aminu Wali",
+    image: "/BQS/bashir.jpg",
+    rank: "Assistant Lecturer",
+    programme: "Building",
+  },
+  {
+    name: "ALIYYU A. Abdulraheem ",
+    image: "/BQS/aliyyu.jpg",
+    rank: "Graduate Assistant",
+    programme: "Building",
+  },
+  {
+    name: "Abbas Khadija Ibrahim  ",
+    image: "/BQS/khadija.jpg",
+    rank: "Technologist I ",
+    programme: "Building",
+  },
+  {
+    name: "Engr. ABDULSALAM A. Ridwan ",
+    image: "/BQS/ridwan.jpg",
+    rank: "Technologist II ",
+    programme: "Building",
+  },
+];
+
 const page = () => {
   return (
     <>
       <div>
-        <div className="w-[98%] mx-auto max-w-5xl">
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl ">
           <h1 className="dept-heading">
             Department of Building / Quantity surveying
           </h1>
 
           {/* Dept navigation */}
-          <ul>
-            <li>
-              <Link href="#programs">List of Programs</Link>
+          <ul className="flex flex-col justify-start gap-3 py-4 mb-6 border border-slate-500 rounded-lg w-fit px-3">
+            <li className="list-disc list-inside">
+              <Link href="#programs" className="text-[13px] italic ">
+                List of Programs
+              </Link>
             </li>
-            <li>
-              <Link href="#staffs">Staff List</Link>
+            <li className="list-disc list-inside">
+              <Link href="#staffs" className="text-[13px] italic ">
+                Staff List
+              </Link>
+            </li>
+            <li className="list-disc list-inside">
+              <Link href="#resources" className="text-[13px] italic ">
+                Resources
+              </Link>
             </li>
           </ul>
 
@@ -45,14 +91,14 @@ const page = () => {
             <div className="   md:flex justify-start mx-auto max-w-5xl">
               <div className="md:min-w-max">
                 <Image
-                  src="/Dean FES.jpeg"
+                  src="/BQS/HOD-BQS.png"
                   height={300}
                   width={300}
                   alt="Dean FES"
                   className="mx-auto block rounded-lg shadow-lg"
                 />
                 <p className="w-full text-center mb-3 tracking-tight font-semibold text-slate-950">
-                  Prof. Abdullateef I. Bako
+                  Prof. James O. B. Rotimi
                 </p>
               </div>
 
@@ -63,29 +109,124 @@ const page = () => {
           </div>
         </div>
       </div>
+
       {/* List of programs */}
-      <div className=" relative bg-slate-500 min-h-screen">
+      <div className=" relative bg-slate-500 min-h-[50vh] text-slate-100">
         <div
           id="programs"
           className="absolute -top-[80px] md:-top-[126px]"
         ></div>
-        <div className="w-[98%] mx-auto max-w-5xl pt-10">
-          <h1 className="program-heading section-heading">List of Programs</h1>
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-10">
+          <h1 className="program-heading">List of Programs</h1>
 
-          <Link href="/building-and-quantity-surveying/building">
-            <p>BSc Building</p>
-          </Link>
-          <Link href="/building-and-quantity-surveying/surveying">
-            <p>BSc Building</p>
-          </Link>
+          <p className="text-base py-3">
+            The Department offers the following programs
+          </p>
+          <Accordion type="multiple" className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <li className="text-left">
+                  Bachelor of Science degree in Building (B.Sc. Building)
+                </li>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-justify py-2 max-w-xl leading-8">
+                  The building degree programme of the university was
+                  established in the university in the year 2023 and it is
+                  designed to prepare students for careers in the building
+                  industry by providing a comprehensive education that emphasise
+                  both theoretical and practical knowledge in the construction,
+                  operation, maintenance and deconstruction of buildings that
+                  are compliant, safe, sustainable, and environmentally sound.
+                </p>
+
+                <Link href="/building-and-quantity-surveying/building">
+                  <Button>View Programme resources</Button>
+                </Link>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                <li className="text-left">
+                  Bachelor of Science degree in Surveying (B.Sc. Surveying)
+                </li>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-justify py-2 max-w-xl leading-8">
+                  The building degree programme of the university was
+                  established in the university in the year 2023 and it is
+                  designed to prepare students for careers in the building
+                  industry by providing a comprehensive education that emphasise
+                  both theoretical and practical knowledge in the construction,
+                  operation, maintenance and deconstruction of buildings that
+                  are compliant, safe, sustainable, and environmentally sound.
+                </p>
+
+                <Link href="/building-and-quantity-surveying/surveying">
+                  <Button>View Programme resources</Button>
+                </Link>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
 
       {/* List of staffs */}
       <div className="bg-white min-h-screen relative">
         <div id="staffs" className="absolute -top-[80px] md:-top-[126px]"></div>
-        <div className="w-[98%] mx-auto max-w-5xl pt-10">
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-10">
           <h1 className="program-heading section-heading">List of Staff</h1>
+
+          <div className="grid grid-cols-1 col-span-1 gap-4 mt-4">
+            {staffList.map((staff) => {
+              return (
+                <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
+                  <Image
+                    src={staff.image}
+                    height={150}
+                    width={150}
+                    alt={staff.name}
+                    className="rounded-full"
+                  />
+                  <article className="flex-1 text-slate-100">
+                    <h1> {staff.name}</h1>
+                    <p>{staff.rank}</p>
+                    <p>{staff.programme}</p>
+                  </article>
+                </div>
+              );
+            })}
+
+            {/* <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
+              <Image
+                src="/BQS/HOD-BQS.png"
+                height={150}
+                width={150}
+                alt="display-pic"
+                className="rounded-full"
+              />
+              <article className="flex-1 text-slate-100">
+                <h1> Prof. James O. B. Rotimi</h1>
+                <p>Head of Department</p>
+                <p>Building/Quantity Surveying</p>
+              </article>
+            </div>
+            <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
+              <Image
+                src="/BQS/moshood.jpg"
+                height={150}
+                width={150}
+                alt="display-pic"
+                className="rounded-full"
+              />
+              <article className="flex-1 text-slate-100">
+                <h1>Shabi, Moshood Olawale</h1>
+                <p>Assistant Lecturer</p>
+                <p>Building</p>
+              </article>
+            </div> */}
+          </div>
         </div>
       </div>
     </>
