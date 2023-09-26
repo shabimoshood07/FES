@@ -97,10 +97,10 @@ header {
   @apply content-[''] h-[3px] w-full text-[20px] absolute rounded-xl -bottom-[3px] bg-slate-950 left-0;
 }
 
+.dept-heading{
+  @apply text-[20px] md:text-[25px] lg:text-[30px] px-2 md:px-0 font-bold text-slate-950 py-4 underline underline-offset-4
+}
+.hod-heading{
+  @apply text-[20px] md:text-[30px] font-bold text-slate-950 py-4
+}
 
-/* .dept{
-  @apply
-} */
-/* .dept:hover ~ .dept-text{
-  @apply  duration-300 translate-x-8 text-red-800
-} */

@@ -146,7 +146,7 @@ const Departments = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="relative group overflow-hidden bg-slate-950 min-h-[200px] rounded-lg  shadow-2xl p-4 flex flex-col items-center justify-center"
               >
-                <h1 className="text-center group-hover:-translate-x-[500%] duration-500 font-bold text-[20px] flex items-center justify-center gap-3">
+                <h1 className="text-center group-hover:-translate-x-[500%] duration-500 font-bold text-[20px] inline gap-3">
                   {dep.name}
                   {dep.icon && dep.icon()}
                 </h1>
@@ -155,22 +155,22 @@ const Departments = () => {
                     {dep.name}
                   </h1>
                   <p className="text-center px-2">{dep.info}</p>
-                  <motion.button
-                    className="w-1/2 mx-auto bg-slate-300 text-slate-950 my-3 py-1 hover:text-slate-300 hover:bg-slate-500 duration-300 rounded-md"
-                    animate={{
-                      scale: [1, 1.5, 1],
-                      type: ["spring"],
-                    }}
-                    transition={{
-                      duration: 2,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }}
-                  >
-                    <Link href={dep.href} className="w-full h-full">
+                  <Link href={dep.href} className="w-full">
+                    <motion.button
+                      className="w-1/2 block mx-auto bg-slate-300 text-slate-950 my-3 py-1 hover:text-slate-300 hover:bg-slate-500 duration-300 rounded-md"
+                      animate={{
+                        scale: [1, 1.5, 1],
+                        type: ["spring"],
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        repeat: Infinity,
+                      }}
+                    >
                       Visit
-                    </Link>
-                  </motion.button>
+                    </motion.button>
+                  </Link>
                 </footer>
               </motion.div>
             );
