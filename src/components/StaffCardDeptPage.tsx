@@ -13,9 +13,9 @@ type Prop = {
 
 const StaffCardDeptPage = ({ staff }: { staff: Prop }) => {
   return (
-    <div className="bg-slate-500 py-3 px-4 rounded-xl shadow-lg !text-slate-100 hover:scale-110 duration-400">
+    <div className="bg-slate-500 py-3 px-4 rounded-xl shadow-lg !text-slate-100 md:hover:scale-110 duration-400">
       <div className="flex justify-start items-start gap-4 ">
-        <Avatar className="h-20 w-20 shadow-lg">
+        <Avatar className="h-20 w-20 shadow-lg border-2 border-slate-950">
           <AvatarImage src={staff.image} />
           <AvatarFallback>{staff.name}</AvatarFallback>
         </Avatar>
