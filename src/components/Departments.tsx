@@ -42,44 +42,6 @@ const dept = [
   },
 ];
 
-// const container = {
-//   hidden: { opacity: 0 },
-//   visible: (i = 1) => ({
-//     opacity: 1,
-//     transition: { staggerChildren: 0.12, delayChildren: 0.05 * i },
-//   }),
-// };
-
-// visible: {
-//   opacity: 1,
-//   scale: 1,
-//   transition: {
-//     delayChildren: 0.3,
-//     staggerChildren: 0.2,
-//   },
-// },
-
-// const child = {
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       type: "spring",
-//       damping: 12,
-//       stiffness: 100,
-//     },
-//   },
-//   hidden: {
-//     opacity: 0,
-//     y: [50, -100],
-//     transition: {
-//       type: "spring",
-//       damping: 12,
-//       stiffness: 100,
-//     },
-//   },
-// };
-
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: (i = 1) => ({
@@ -115,13 +77,10 @@ const Departments = () => {
 
         <motion.div
           variants={container}
-          // variants={isInView ? container : undefined}
           initial="hidden"
           animate="visible"
           className="grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center "
-          // ref={ref}
           style={{
-            // transform: isInView ? "none" : "translateY(200px)",
             transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .1s",
             overflow: "hidden",
           }}
@@ -130,7 +89,6 @@ const Departments = () => {
             return (
               <motion.div
                 key={index}
-                // variants={isInView ? child : undefined}
                 variants={child}
                 initial="offscreen"
                 whileInView={{

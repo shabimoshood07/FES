@@ -7,9 +7,6 @@ import Image from "next/image";
 import { Divider } from "@nextui-org/react";
 
 const carouselItem = [
-  //   {
-  //     heading: <HeroText text="Faculty of Enviromental Sciences" />,
-  //   },
   {
     heading: "News one",
     content:
@@ -43,7 +40,11 @@ const carouselItem = [
 ];
 
 const HomeCarousel = () => {
-  const [mediaWidth, setMediaWidth] = useState(window.innerWidth);
+  // const [mediaWidth, setMediaWidth] = useState(window.innerWidth);
+
+  const [mediaWidth, setMediaWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   useEffect(() => {
     const handleResize = () => {
