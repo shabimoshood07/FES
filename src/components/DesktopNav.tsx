@@ -85,7 +85,7 @@ const DesktopNav = () => {
                 </Link>
                 <Link
                   className=" text-base nav-sublink relative text-center"
-                  href="#"
+                  href="/building-and-quantity-surveying"
                 >
                   Building / Quantity surveying
                 </Link>

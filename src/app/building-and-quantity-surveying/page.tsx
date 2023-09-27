@@ -1,3 +1,4 @@
+import StaffCardDeptPage from "@/components/StaffCardDeptPage";
 import {
   Accordion,
   AccordionContent,
@@ -17,42 +18,49 @@ const staffList = [
     image: "/BQS/HOD-BQS.png",
     rank: "Head of Department",
     programme: "Building/QS",
+    email: "shabimoshood07@gmail.com",
   },
   {
     name: "AGBOOLA Shamsudeen A",
     image: "/BQS/shamsudeen.jpg",
     rank: "Lecturer II",
     programme: "Building",
+    email: "shabimoshood07@gmail.com",
   },
   {
     name: "Shabi M.O",
     image: "/BQS/moshood.jpg",
     rank: "Assistant Lecturer",
     programme: "Building",
+    email: "moshood.shabi@uniabuja.edu.ng",
   },
   {
     name: "BASHIR Aminu Wali",
     image: "/BQS/bashir.jpg",
     rank: "Assistant Lecturer",
     programme: "Building",
+    email: "aminu.bashir@uniabuja.edu.ng",
   },
   {
     name: "ALIYYU A. Abdulraheem ",
     image: "/BQS/aliyyu.jpg",
     rank: "Graduate Assistant",
     programme: "Building",
+    email: "aliyu.abdulraheem@uniabuja.edu.ng",
   },
   {
     name: "Abbas Khadija Ibrahim  ",
     image: "/BQS/khadija.jpg",
     rank: "Technologist I ",
     programme: "Building",
+    email: "shabimoshood07@gmail.com",
   },
   {
     name: "Engr. ABDULSALAM A. Ridwan ",
     image: "/BQS/ridwan.jpg",
     rank: "Technologist II ",
     programme: "Building",
+    email: "ridwan.abdulsalam@uniabuja.edu.ng",
   },
 ];
 
@@ -178,14 +186,16 @@ const page = () => {
         <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-10">
           <h1 className="program-heading section-heading">List of Staff</h1>
 
-          <div className="grid grid-cols-1 col-span-1 gap-4 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-6 mt-4">
             {staffList.map((staff) => {
-              return (
-                <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
+              return <StaffCardDeptPage staff={staff} />;
+            })}
+
+            {/* <div className="flex justify-start items-start gap-4 bg-slate-500 py-3 px-4">
                   <Image
                     src={staff.image}
-                    height={150}
-                    width={150}
+                    height={200}
+                    width={200}
                     alt={staff.name}
                     className="rounded-full"
                   />
@@ -194,9 +204,7 @@ const page = () => {
                     <p>{staff.rank}</p>
                     <p>{staff.programme}</p>
                   </article>
-                </div>
-              );
-            })}
+                </div> */}
 
             {/* <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
               <Image
