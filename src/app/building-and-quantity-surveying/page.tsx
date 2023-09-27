@@ -119,12 +119,12 @@ const page = () => {
       </div>
 
       {/* List of programs */}
-      <div className=" relative bg-slate-500 min-h-[50vh] text-slate-100">
+      <div className=" relative bg-slate-500 min-h-[500px] text-slate-100">
         <div
           id="programs"
           className="absolute -top-[80px] md:-top-[126px]"
         ></div>
-        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-10">
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
           <h1 className="program-heading">List of Programs</h1>
 
           <p className="text-base py-3">
@@ -181,60 +181,27 @@ const page = () => {
       </div>
 
       {/* List of staffs */}
-      <div className="bg-white min-h-screen relative">
+      <div className="bg-white min-h-[600px] relative">
         <div id="staffs" className="absolute -top-[80px] md:-top-[126px]"></div>
-        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-10">
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
           <h1 className="program-heading section-heading">List of Staff</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
             {staffList.map((staff) => {
               return <StaffCardDeptPage staff={staff} />;
             })}
-
-            {/* <div className="flex justify-start items-start gap-4 bg-slate-500 py-3 px-4">
-                  <Image
-                    src={staff.image}
-                    height={200}
-                    width={200}
-                    alt={staff.name}
-                    className="rounded-full"
-                  />
-                  <article className="flex-1 text-slate-100">
-                    <h1> {staff.name}</h1>
-                    <p>{staff.rank}</p>
-                    <p>{staff.programme}</p>
-                  </article>
-                </div> */}
-
-            {/* <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
-              <Image
-                src="/BQS/HOD-BQS.png"
-                height={150}
-                width={150}
-                alt="display-pic"
-                className="rounded-full"
-              />
-              <article className="flex-1 text-slate-100">
-                <h1> Prof. James O. B. Rotimi</h1>
-                <p>Head of Department</p>
-                <p>Building/Quantity Surveying</p>
-              </article>
-            </div>
-            <div className="flex justify-start items-start border  border-red-500 gap-4 bg-slate-500 py-3 px-4">
-              <Image
-                src="/BQS/moshood.jpg"
-                height={150}
-                width={150}
-                alt="display-pic"
-                className="rounded-full"
-              />
-              <article className="flex-1 text-slate-100">
-                <h1>Shabi, Moshood Olawale</h1>
-                <p>Assistant Lecturer</p>
-                <p>Building</p>
-              </article>
-            </div> */}
           </div>
+        </div>
+      </div>
+
+      {/* Resources */}
+      <div className="bg-slate-500 min-h-[700px] relative">
+        <div
+          id="resources"
+          className="absolute -top-[80px] md:-top-[126px]"
+        ></div>
+        <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
+          <h1 className="program-heading section-heading">Resources</h1>
         </div>
       </div>
     </>
