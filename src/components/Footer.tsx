@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h1 className="text-[20px] font-semibold">Programs</h1>
 
-          {programs.map((prog) => (
+          {programs.map((prog, index) => (
             <Link href={prog.href}>
               <p className="flex justify-between items-start gap-2 hover:text-slate-100 text-[14px]">
                 {prog.name}
@@ -62,8 +62,8 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4">
           <h1 className="text-[20px] font-semibold">Department</h1>
-          {dept.map((dep) => (
-            <Link href={dep.href}>
+          {dept.map((dep, index) => (
+            <Link href={dep.href} key={index}>
               <p className="flex gap-2 hover:text-slate-100 justify-between text-[14px]">
                 {dep.name}
               </p>

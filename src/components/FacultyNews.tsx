@@ -37,9 +37,9 @@ const FacultyNews = () => {
         />
 
         <div className="my-6 max-w-2xl">
-          {news.map((ne) => {
+          {news.map((ne, index) => {
             return (
-              <MotionDiv>
+              <MotionDiv key={index}>
                 <div className="my-6 border-b-2 py-2">
                   <Link href="#">
                     <h1 className="inline-block py-3 font-semibold uppercase  text-[20px] hover:underline underline-offset-4 duration-300">
