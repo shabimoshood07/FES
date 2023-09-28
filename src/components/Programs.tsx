@@ -23,17 +23,12 @@ export const programs = [
     bg: "#64113F",
   },
   {
-    name: "B.Sc Geoinformatics",
-    href: "building-and-quantity-surveying/building",
-    bg: "#64113F",
-  },
-  {
     name: "B.Sc Industrial Design",
     href: "building-and-quantity-surveying/building",
     bg: "#64113F",
   },
   {
-    name: "B.Sc Surveying",
+    name: "B.Sc Surveying and Geoinformatics",
     href: "building-and-quantity-surveying/surveying",
     bg: "#DAA507",
   },

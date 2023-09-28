@@ -1,18 +1,4 @@
 "use client";
-// import { MoveUp } from "lucide-react";
-// import Link from "next/link";
-
-// const GotoTopBtn = () => {
-//   return (
-//     <Link href="#top">
-//       <button className="border-2 border-slate-950 rounded-lg p-2 fixed bottom-0 right-0 mx-4 mb-2 ">
-//         <MoveUp />
-//       </button>
-//     </Link>
-//   );
-// };
-
-// export default GotoTopBtn;
 
 import { MoveUp } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -47,10 +33,11 @@ const GotoTopBtn = () => {
     <>
       {showButton && (
         <button
-          className="text-[12px] opacity-20 hover:opacity-100 border-2 border-slate-950  text-red-800 rounded-lg p-1 fixed bottom-0 right-0 mx-4 mb-2"
+          className="text-[12px] opacity-50 hover:opacity-100 border-2 border-slate-950  text-red-800 rounded-lg p-1 fixed bottom-0 right-0 mx-4 mb-2"
           onClick={scrollToTop}
         >
-          <MoveUp className="font-bold h-3" />Top
+          <MoveUp className="font-bold h-3" />
+          Top
         </button>
       )}
     </>
