@@ -34,7 +34,7 @@ const AboutFaculty = () => {
           {about.slice(0, words)}
           {
             <button
-              className="text-slate-500"
+              className="text-slate-950"
               onClick={() =>
                 words === 700 ? setWords(about.length) : setWords(700)
               }
