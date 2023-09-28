@@ -19,6 +19,16 @@ import {
 } from "@/components/ui/hover-card";
 import Image from "next/image";
 
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+
 const DesktopNav = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
@@ -50,68 +60,62 @@ const DesktopNav = () => {
           </div>
 
           <div>
-            <Link href="#about">About the Faculty</Link>
+            <Link href="/#about">About the Faculty</Link>
           </div>
 
           <div>
-            <HoverCard openDelay={200} closeDelay={100}>
-              <HoverCardTrigger className="cursor-pointer flex items-center gap-4">
-                Departments
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </HoverCardTrigger>
-              <HoverCardContent
-                className="flex flex-col items-center w-max gap-4"
-                sideOffset={10}
-                alignOffset={100}
-              >
-                <Link
-                  className="nav-sublink text-center relative text-base"
-                  href="architecture-and-industrial-design"
-                >
-                  Architecture / Industrial design
-                </Link>
-                <Link
-                  className=" text-base nav-sublink relative text-center"
-                  href="/building-and-quantity-surveying"
-                >
-                  Building / Quantity surveying
-                </Link>
-                <Link
-                  className=" nav-sublink relative text-center text-base"
-                  href="estate-management-urban-and-regional-planning"
-                >
-                  Estate management / Urban and regional planning
-                </Link>
-                <Link
-                  className="text-base nav-sublink relative text-center "
-                  href="surveying-and-geoinformatics"
-                >
-                  Surveying / Geoinformatics
-                </Link>
-              </HoverCardContent>
-            </HoverCard>
+            <Menubar className="!bg-transparent border-none cursor-pointer">
+              <MenubarMenu>
+                <MenubarTrigger className="!bg-transparent !text-slate-100 cursor-pointer">
+                  Departments
+                </MenubarTrigger>
+                <MenubarContent align="center" sideOffset={15} className="pb-4">
+                  <Link
+                    className="nav-sublink !text-center relative text-base"
+                    href="architecture-and-industrial-design"
+                  >
+                    <MenubarItem className="cursor-pointer !text-center">
+                      Architecture / Industrial design
+                    </MenubarItem>
+                  </Link>
+                  <Link
+                    className=" text-base nav-sublink relative text-center"
+                    href="/building-and-quantity-surveying"
+                  >
+                    <MenubarItem className="cursor-pointer !text-center">
+                      Building / Quantity surveying
+                    </MenubarItem>
+                  </Link>
+                  <MenubarSeparator />{" "}
+                  <Link
+                    className=" nav-sublink relative text-center text-base"
+                    href="estate-management-urban-and-regional-planning"
+                  >
+                    <MenubarItem className="cursor-pointer !text-center">
+                      Estate management / Urban and regional planning
+                    </MenubarItem>
+                  </Link>
+                  <MenubarSeparator />{" "}
+                  <Link
+                    className="text-base nav-sublink relative text-center "
+                    href="surveying-and-geoinformatics"
+                  >
+                    <MenubarItem className="cursor-pointer !text-center">
+                      Surveying / Geoinformatics
+                    </MenubarItem>
+                  </Link>
+                </MenubarContent>
+              </MenubarMenu>
+            </Menubar>
           </div>
 
           <div>
-            <Link className="w-full " href="#news">
+            <Link className="w-full " href="/#news">
               Faculty news
             </Link>
           </div>
           <div>
-            <Link className="w-full " href="#events">
+            <Link className="w-full " href="/#events">
               Events
             </Link>
           </div>
@@ -122,3 +126,56 @@ const DesktopNav = () => {
 };
 
 export default DesktopNav;
+
+{
+  /* <HoverCard openDelay={200} closeDelay={100}>
+<HoverCardTrigger className="cursor-pointer flex items-center gap-4">
+  Departments
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-6 h-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+    />
+  </svg>
+</HoverCardTrigger>
+<HoverCardContent
+  className="flex flex-col items-center w-max gap-4"
+  sideOffset={10}
+  alignOffset={100}
+  onClick={}
+>
+  <Link
+    className="nav-sublink text-center relative text-base"
+    href="architecture-and-industrial-design"
+  >
+    Architecture / Industrial design
+  </Link>
+  <Link
+    className=" text-base nav-sublink relative text-center"
+    href="/building-and-quantity-surveying"
+  >
+    Building / Quantity surveying
+  </Link>
+  <Link
+    className=" nav-sublink relative text-center text-base"
+    href="estate-management-urban-and-regional-planning"
+  >
+    Estate management / Urban and regional planning
+  </Link>
+  <Link
+    className="text-base nav-sublink relative text-center "
+    href="surveying-and-geoinformatics"
+  >
+    Surveying / Geoinformatics
+  </Link>
+</HoverCardContent>
+</HoverCard> */
+}

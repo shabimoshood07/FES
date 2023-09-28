@@ -28,6 +28,11 @@ export const programs = [
     bg: "#64113F",
   },
   {
+    name: "B.Sc Quantity Surveying",
+    href: "building-and-quantity-surveying/building",
+    bg: "#64113F",
+  },
+  {
     name: "B.Sc Surveying and Geoinformatics",
     href: "building-and-quantity-surveying/surveying",
     bg: "#DAA507",
