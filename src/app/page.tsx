@@ -17,8 +17,8 @@ const Home = () => {
       <Departments />
       <Programs />
       <FacultyNews />
-      <Events />
       <AboutFaculty />
+      <Events />
     </div>
   );
 };

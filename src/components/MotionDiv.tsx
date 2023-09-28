@@ -2,28 +2,28 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 
-const HomeSectionsHeading = ({
-  text,
+const MotionDiv = ({
+  children,
   style,
 }: {
-  text: string;
-  style: string;
+  children: React.ReactNode;
+  style?: string;
 }) => {
   const heading = useRef(null);
   const isInView = useInView(heading, { once: true });
   return (
-    <motion.h1
+    <motion.div
       ref={heading}
       style={{
-        transform: isInView ? "none" : "translateX(-100px)",
+        transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
       }}
-      className={`section-heading  ${style} `}
+      className={`${style} `}
     >
-      {text}
-    </motion.h1>
+      {children}
+    </motion.div>
   );
 };
 
-export default HomeSectionsHeading;
+export default MotionDiv;

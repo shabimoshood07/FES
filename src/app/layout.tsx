@@ -3,13 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Sansita, Adamina } from "next/font/google";
 import { NextUiProvider } from "@/components/NextUiProvider";
 import NavbarComponent from "@/components/Navbar";
-// "Source Sans Pro", sans-serif
-
-const inter = Inter({ subsets: ["latin"] });
-const sansita = Sansita({
-  subsets: ["latin"],
-  weight: "400",
-});
+import Footer from "@/components/Footer";
+import GotoTopBtn from "@/components/GotoTopBtn";
 const adamina = Adamina({
   subsets: ["latin"],
   weight: "400",
@@ -31,7 +26,9 @@ export default function RootLayout({
         <NextUiProvider>
           <NavbarComponent />
           {children}
+          <Footer />
         </NextUiProvider>
+        <GotoTopBtn />
       </body>
     </html>
   );

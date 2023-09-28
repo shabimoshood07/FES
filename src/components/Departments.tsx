@@ -2,16 +2,15 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import HomeSectionsHeading from "./HomeSectionsHeading";
-const dept = [
+export const dept = [
   {
     name: "Architecture / Industrial design",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam nam laudantium aspernatur officiis repudiandae illo",
-    href: "/architecture",
+    href: "/architecture-and-industrial-design",
   },
   {
     name: "Building / Quantity surveying",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam nam laudantium aspernatur officiis repudiandae illo",
-    href: "building-and-quantity-surveying",
+    info: "Precision in Progress: Building the Future!. Checkout our programs for B.Sc in Building and QS",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -28,16 +27,17 @@ const dept = [
         />
       </svg>
     ),
+    href: "/building-and-quantity-surveying",
   },
   {
     name: "Estate management / Urban and regional planning",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam nam laudantium aspernatur officiis repudiandae illo",
-    href: "",
+    href: "estate-management-urban-and-regional-planning",
   },
   {
     name: "Surveying / Geoinformatics",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam nam laudantium aspernatur officiis repudiandae illo",
-    href: "",
+    href: "surveying-and-geoinformatics",
   },
 ];
 
@@ -98,7 +98,6 @@ const Departments = () => {
               >
                 <h1 className="text-center group-hover:-translate-x-[500%] duration-500 font-bold text-[20px] inline gap-3">
                   {dep.name}
-                  {dep.icon && dep.icon()}
                 </h1>
                 <footer className="absolute flex justify-center flex-col items-center -right-[200%] duration-500 t w-full h-full group-hover:right-0 ">
                   <h1 className="underline underline-offset-4 py-2">

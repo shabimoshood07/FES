@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import HomeSectionsHeading from "./HomeSectionsHeading";
 
-const programs = [
+export const programs = [
   {
     name: "B.Sc Architecture",
     href: "building-and-quantity-surveying/building",
@@ -54,15 +54,12 @@ const child = {
 
 const Programs = () => {
   return (
-    <div className=" bg-slate-500 min-h-[500px] px-4">
+    <div className=" bg-slate-500 min-h-[500px] px-4 text-slate-100">
       <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
         <div id="new" className="absolute -top-[80px] md:-top-[126px]"></div>
-
-        {/* <h1 className="section-heading">Programs</h1> */}
-
         <HomeSectionsHeading
           text="Programs"
-          style="text-slate-100 after:bg-slate-100"
+          style="text-slate-100 after:bg-slate-100 mb-4"
         />
         <Tabs defaultValue="undergraduate">
           <TabsList className="w-full overflow-x-auto  justify-start items-center h-fit bg-transparent text-slate-950 border-b-[1px] py-4 border-slate-100 rounded-none ">

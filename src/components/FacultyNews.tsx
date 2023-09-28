@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HomeSectionsHeading from "./HomeSectionsHeading";
+import MotionDiv from "./MotionDiv";
 
 const news = [
   {
@@ -27,7 +28,7 @@ const news = [
 
 const FacultyNews = () => {
   return (
-    <div className=" bg-white py-10 px-4 min-h-[500px]">
+    <div className=" bg-white py-10 px-4 min-h-[500px] relative">
       <div id="news" className="absolute -top-[80px] md:-top-[126px]"></div>
       <div className="mx-auto max-w-5xl">
         <HomeSectionsHeading
@@ -38,19 +39,21 @@ const FacultyNews = () => {
         <div className="my-6 max-w-2xl">
           {news.map((ne) => {
             return (
-              <div className="my-6 border-b-2 py-2">
-                <Link href="#">
-                  <h1 className="inline-block py-3 font-semibold uppercase  text-[20px] hover:underline underline-offset-4 duration-300">
-                    {ne.title}
-                  </h1>
-                </Link>
-                <p className="text-justify leading-6">
-                  {ne.content.slice(0, 200)}...
-                </p>
-                <h2 className="text-right pt-3">
-                  {ne.Date.toLocaleDateString()}
-                </h2>
-              </div>
+              <MotionDiv>
+                <div className="my-6 border-b-2 py-2">
+                  <Link href="#">
+                    <h1 className="inline-block py-3 font-semibold uppercase  text-[20px] hover:underline underline-offset-4 duration-300">
+                      {ne.title}
+                    </h1>
+                  </Link>
+                  <p className="text-justify leading-6">
+                    {ne.content.slice(0, 200)}...
+                  </p>
+                  <h2 className="text-right pt-3">
+                    {ne.Date.toLocaleDateString()}
+                  </h2>
+                </div>
+              </MotionDiv>
             );
           })}
         </div>
