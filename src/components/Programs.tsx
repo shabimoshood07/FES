@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import HomeSectionsHeading from "./HomeSectionsHeading";
 
 const programs = [
   {
@@ -44,39 +45,25 @@ const programs = [
 ];
 
 const child = {
-  // hidden: { y: [50, -100], opacity: 0 },
   offscreen: {
     scale: 1,
     opacity: 0,
-    y: [50, -100, 50],
+    y: 20,
   },
-  // visible: {
-  //   y: 0,
-  //   opacity: 1,
-  // },
 };
 
 const Programs = () => {
   return (
-    <div className=" bg-slate-500 text-slate-100 py-10 px-4 min-h-[calc(100vh-90px)] md:min-h-[calc(100vh-126px)]">
-      <div className="mx-auto max-w-5xl">
-        <motion.h1
-          className="section-heading  mb-6"
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{
-            x: 0,
-            opacity: 1,
-            transition: {
-              duration: 1,
-              type: "spring",
-              delay: 1,
-            },
-          }}
-          viewport={{ once: true, amount: 0.8 }}
-        >
-          Programs
-        </motion.h1>
+    <div className=" bg-slate-500 min-h-[500px] px-4">
+      <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
+        <div id="new" className="absolute -top-[80px] md:-top-[126px]"></div>
 
+        {/* <h1 className="section-heading">Programs</h1> */}
+
+        <HomeSectionsHeading
+          text="Programs"
+          style="text-slate-100 after:bg-slate-100"
+        />
         <Tabs defaultValue="undergraduate">
           <TabsList className="w-full overflow-x-auto  justify-start items-center h-fit bg-transparent text-slate-950 border-b-[1px] py-4 border-slate-100 rounded-none ">
             <TabsTrigger value="undergraduate" className="">
@@ -109,11 +96,11 @@ const Programs = () => {
                       initial="offscreen"
                       whileInView={{
                         scale: 1,
-                        y: 0,
+                        y: [30, -30, 0],
                         transition: {
                           type: "spring",
-                          bounce: 0.4,
-                          duration: 1.8,
+                          bounce: 0.5,
+                          duration: 1,
                         },
                         opacity: 1,
                       }}
@@ -129,13 +116,13 @@ const Programs = () => {
             </div>
           </TabsContent>
           <TabsContent value="postgraduate">
-            <div>
-              <h1>Coming Soon !!! ⏳⏳</h1>
+            <div className="flex justify-start items-center">
+              <h1 className="text-[30px] text-left">Coming Soon !!! ⏳⏳</h1>
             </div>
           </TabsContent>
           <TabsContent value="others">
-            <div>
-              <h1>Coming Soon !!! ⏳⏳</h1>
+            <div className="flex justify-start items-center">
+              <h1 className="text-[30px] text-left">Coming Soon !!! ⏳⏳</h1>
             </div>
           </TabsContent>
         </Tabs>

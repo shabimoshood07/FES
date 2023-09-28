@@ -64,7 +64,7 @@ const staffList = [
   },
 ];
 
-const page = () => {
+const BuildingQuantitySurveying = () => {
   return (
     <>
       <div>
@@ -208,4 +208,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BuildingQuantitySurveying;

@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
+import HomeSectionsHeading from "./HomeSectionsHeading";
 const dept = [
   {
     name: "Architecture / Industrial design",
@@ -52,34 +51,27 @@ const container = {
 };
 
 const child = {
-  // hidden: { y: [50, -100], opacity: 0 },
   offscreen: {
     scale: 0,
     opacity: 0,
     y: [50, -100, 50],
   },
-  // visible: {
-  //   y: 0,
-  //   opacity: 1,
-  // },
 };
 
 const Departments = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
-
   return (
-    <div className=" bg-white text-slate-100 py-10 px-4 min-h-[calc(100vh-90px)] md:min-h-[calc(100vh-126px)]">
+    <div className=" bg-white text-slate-100 py-10 px-4 min-h-[600px]">
       <div className="mx-auto max-w-5xl">
-        <motion.h1 className="section-heading  text-slate-950 mb-6">
-          Departments
-        </motion.h1>
+        <HomeSectionsHeading
+          text="Departments"
+          style="text-slate-950 after:bg-slate-950"
+        />
 
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center "
+          className="grid grid-cols-1 md:grid-cols-2  gap-12 justify-center items-center mt-4 "
           style={{
             transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .1s",
             overflow: "hidden",

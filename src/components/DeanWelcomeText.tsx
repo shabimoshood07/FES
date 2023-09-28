@@ -12,7 +12,7 @@ function DeanWelcomeText() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="pb-10 bg-white px-4 min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-126px)]">
+    <div className="pb-10 bg-white px-4 min-h-[500px]">
       <div
         style={{
           transform: isInView ? "none" : "translateY(200px)",

@@ -50,7 +50,7 @@ const DesktopNav = () => {
           </div>
 
           <div>
-            <Link href="#">About the Faculty</Link>
+            <Link href="#about">About the Faculty</Link>
           </div>
 
           <div>
@@ -79,7 +79,7 @@ const DesktopNav = () => {
               >
                 <Link
                   className="nav-sublink text-center relative text-base"
-                  href="#"
+                  href="architecture-and-industrial-design"
                 >
                   Architecture / Industrial design
                 </Link>
@@ -91,13 +91,13 @@ const DesktopNav = () => {
                 </Link>
                 <Link
                   className=" nav-sublink relative text-center text-base"
-                  href="#"
+                  href="estate-management-urban-and-regional-planning"
                 >
                   Estate management / Urban and regional planning
                 </Link>
                 <Link
                   className="text-base nav-sublink relative text-center "
-                  href="#"
+                  href="surveying-and-geoinformatics"
                 >
                   Surveying / Geoinformatics
                 </Link>
@@ -106,7 +106,7 @@ const DesktopNav = () => {
           </div>
 
           <div>
-            <Link className="w-full " href="#">
+            <Link className="w-full " href="#news">
               Faculty news
             </Link>
           </div>

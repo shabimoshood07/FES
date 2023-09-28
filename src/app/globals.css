@@ -94,7 +94,7 @@ header {
   @apply font-bold text-[25px] md:text-[35px] relative inline-block tracking-widest;
 }
 .section-heading::after {
-  @apply content-[''] h-[3px] w-full text-[20px] absolute rounded-xl -bottom-[3px] bg-slate-950 left-0;
+  @apply content-[''] h-[3px] w-full text-[20px] absolute rounded-xl -bottom-[3px] left-0;
 }
 
 .dept-heading {

@@ -59,7 +59,7 @@ const MobileNav = () => {
         </NavbarMenuItem>
         <Divider />
         <NavbarMenuItem className="py-4">
-          <Link className="w-full" href="#">
+          <Link className="w-full" href="#about">
             About the faculty
           </Link>
         </NavbarMenuItem>
@@ -69,7 +69,7 @@ const MobileNav = () => {
             <Divider />
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="nav-sublink w-full text-sm relative" href="#">
+              <Link className="nav-sublink w-full text-sm relative" href="architecture-and-industrial-design">
                 Architecture / Industrial design
               </Link>
             </NavbarMenuItem>
@@ -84,13 +84,14 @@ const MobileNav = () => {
             </NavbarMenuItem>
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="w-full text-sm nav-sublink relative" href="#">
+              <Link className="w-full text-sm nav-sublink relative" href="estate-management-urban-and-regional-planning">
                 Estate management / Urban and regional planning
               </Link>
             </NavbarMenuItem>
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="w-full text-sm nav-sublink relative" href="#">
+              <Link className="w-full text-sm nav-sublink relative" href="surveying-and-geoinformatics
+              ">
                 Surveying / Geoinformatics
               </Link>
             </NavbarMenuItem>
@@ -99,7 +100,7 @@ const MobileNav = () => {
         <Divider />
 
         <NavbarMenuItem className="py-4">
-          <Link className="w-full " href="#">
+          <Link className="w-full " href="#news">
             Faculty news
           </Link>
         </NavbarMenuItem>
