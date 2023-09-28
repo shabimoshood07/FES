@@ -52,7 +52,7 @@ const Footer = () => {
           <h1 className="text-[20px] font-semibold">Programs</h1>
 
           {programs.map((prog, index) => (
-            <Link href={prog.href}>
+            <Link href={prog.href} key={index}>
               <p className="flex justify-between items-start gap-2 hover:text-slate-100 text-[14px]">
                 {prog.name}
               </p>

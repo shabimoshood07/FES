@@ -84,7 +84,7 @@ const Programs = () => {
               {programs.map((prog, index) => {
                 const { bg } = prog;
                 return (
-                  <Link href={prog.href}>
+                  <Link href={prog.href} key={index}>
                     <motion.div
                       data-index={index}
                       className={` bg-[${bg}] px-4 min-h-[100px] flex justify-start  items-center `}
