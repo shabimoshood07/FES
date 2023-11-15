@@ -7,6 +7,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { BLD_staff_list } from "@/data/BQS/BLD";
+import { HOD_profile } from "@/data/BQS/HOD";
+import { QTS_staff_list } from "@/data/BQS/QTS";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -261,9 +264,23 @@ const BuildingQuantitySurveying = () => {
         <div id="staffs" className="absolute -top-[80px] md:-top-[126px]"></div>
         <div className="w-[96%] sm:w-[90%] mx-auto max-w-5xl py-6">
           <h1 className="program-heading section-heading">List of Staff</h1>
-
+          <h1 className="mt-8 text-[20px] ml-6 font-semibold">
+            Head of Department
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
-            {staffList.map((staff, index) => {
+            <StaffCardDeptPage staff={HOD_profile} />;
+          </div>
+          <h1 className="mt-8 text-[20px] ml-6 font-semibold">Building</h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
+            {BLD_staff_list.map((staff, index) => {
+              return <StaffCardDeptPage staff={staff} key={index} />;
+            })}
+          </div>
+          <h1 className="mt-8 text-[20px] ml-6 font-semibold">
+            Quantity Surveying
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
+            {QTS_staff_list.map((staff, index) => {
               return <StaffCardDeptPage staff={staff} key={index} />;
             })}
           </div>

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import useWindowSize from "@/hooks/useWindowSize";
 const carouselItem = [
   {
     heading: "News one",
@@ -37,24 +37,7 @@ const carouselItem = [
 ];
 
 const HomeCarousel = () => {
-  // const [mediaWidth, setMediaWidth] = useState(window.innerWidth);
-
-  const [mediaWidth, setMediaWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setMediaWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+  const { windowSize } = useWindowSize();
   return (
     <Carousel
       showArrows={false}
@@ -65,15 +48,14 @@ const HomeCarousel = () => {
       showThumbs={false}
       showStatus={false}
       stopOnHover={true}
-      //   centerMode={true}
-      centerMode={mediaWidth >= 780}
+      centerMode={windowSize.width! >= 780}
       centerSlidePercentage={50}
     >
       {carouselItem.map((item, index) => {
         return (
           <div
             className={` ${
-              mediaWidth >= 780 ? "border-l-2" : ""
+              windowSize.width! >= 780 ? "border-l-2" : ""
             } border-slate-200 h-[calc(70vh-4rem)] md:h-[calc(70vh-4rem)] flex  flex-col justify-center gap-6 pt-8 pl-7 `}
             key={index}
           >
