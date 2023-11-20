@@ -29,7 +29,7 @@ const StaffDetails = ({
       >
         <SheetHeader>
           <SheetTitle className="md:flex gap-6 ">
-            <div className="relative w-full max-w-[500px] h-[300px] rounded-2xl mt-6 md:mt-0 overflow-hidden min-[500px]:h-[400px] md:h-[300px] md:w-[300px]">
+            <div className="relative w-full md:min-w-[300px] max-w-[500px] h-[300px] rounded-2xl mt-6 md:mt-0 overflow-hidden min-[500px]:h-[400px] md:h-[300px] md:w-[300px]">
               <Image
                 src={staffDetails.image}
                 width={500}

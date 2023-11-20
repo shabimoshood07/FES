@@ -1,5 +1,26 @@
 export const URP_staff_list: StaffDetails[] = [
   {
+    name: "Prof. Abdullateef I. Bako",
+    image: "/Dean FES.jpeg",
+    rank: "Professor",
+    programme: "Urban and Regional Planning",
+    email: "abdullateef.bako@uniabuja.edu.ng",
+    tel: "",
+    googleScholar:
+      "https://scholar.google.com/citations?hl=en&user=w9150mUAAAAJ",
+    otherLinks: [
+      {
+        name: "Web of Science",
+        link: "https://www.webofscience.com/wos/author/record/ISS-1066-2023"
+      },
+      {
+        name: "Scopus",
+        link: "https://www.scopus.com/authid/detail.uri?authorId=56160038000"
+      },
+    ],
+    qualifications: "PhD (FUTA), M.URP (UI), MBA. Exec (LAUTECH), BSc.(NOUN),RTP, MNITP, NES",
+  },
+  {
     name: "Dr. Isola-Muyideen Oluwadara Latifat",
     image: "/URP_ESM/oluwadara-latifat.png",
     rank: "Lecturer II",
@@ -14,7 +35,7 @@ export const URP_staff_list: StaffDetails[] = [
   {
     name: "Dr. Abdul-Azeez Bashirat Mustapha",
     image: "/URP_ESM/bashirat-mustapha.jpg",
-    rank: "Lecturer I",
+    rank: "Lecturer II",
     programme: "Urban and Regional Planning",
     email: "bashirat.abdul-azeez@uniabuja.edu.ng",
     tel: "08026870829",

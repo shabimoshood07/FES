@@ -9,37 +9,37 @@ import HomeSectionsHeading from "./HomeSectionsHeading";
 export const programs = [
   {
     name: "B.Sc Architecture",
-    href: "building-and-quantity-surveying/building",
+    href: "architecture-and-industrial-design",
     bg: "#64113F",
   },
   {
     name: "B.Sc Building",
-    href: "building-and-quantity-surveying/building",
+    href: "building-and-quantity-surveying/",
     bg: "#FF715B",
   },
   {
     name: "B.Sc Estate Management",
-    href: "building-and-quantity-surveying/building",
+    href: "estate-management-urban-and-regional-planning",
     bg: "#64113F",
   },
   {
     name: "B.Sc Industrial Design",
-    href: "building-and-quantity-surveying/building",
+    href: "architecture-and-industrial-design",
     bg: "#64113F",
   },
   {
     name: "B.Sc Quantity Surveying",
-    href: "building-and-quantity-surveying/building",
+    href: "building-and-quantity-surveying/",
     bg: "#64113F",
   },
   {
     name: "B.Sc Surveying and Geoinformatics",
-    href: "building-and-quantity-surveying/surveying",
+    href: "surveying-and-geoinformatics",
     bg: "#DAA507",
   },
   {
     name: "B.Sc Urban and Regional Planning",
-    href: "building-and-quantity-surveying/building",
+    href: "estate-management-urban-and-regional-planning",
     bg: "#64113F",
   },
 ];

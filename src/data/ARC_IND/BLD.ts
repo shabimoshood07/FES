@@ -5,7 +5,7 @@ export const BLD_staff_list: StaffDetails[] = [
         image: "/BQS/shamsudeen.jpg",
         rank: "Lecturer II",
         programme: "Building",
-        email: "shamsudeen.agboola@uniabuja.edu.ng",
+        email: "shabimoshood07@gmail.com",
         tel: "",
         googleScholar: "",
         otherLinks: [],
@@ -17,15 +17,10 @@ export const BLD_staff_list: StaffDetails[] = [
         rank: "Assistant Lecturer",
         programme: "Building",
         email: "moshood.shabi@uniabuja.edu.ng",
-        tel: "08167838104",
+        tel: "",
         googleScholar: "",
-        otherLinks: [
-            {
-                name: "LinkedIn",
-                link: "https://www.linkedin.com/in/moshood-shabi-ba620919a/"
-            }
-        ],
-        qualifications: "M.Eng. (Civil Engr.), B.Eng. (Civil Engr.), Member ASCE ",
+        otherLinks: [],
+        qualifications: "",
     },
     {
         name: "BASHIR Aminu Wali",

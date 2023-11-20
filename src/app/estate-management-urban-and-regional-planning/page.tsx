@@ -23,7 +23,7 @@ const EsmUrp = () => {
           </h1>
 
           {/* Dept navigation */}
-          <ul className="flex flex-col justify-start gap-3 py-4 mb-6 border border-slate-500 rounded-lg w-fit px-3">
+          <ul className="flex flex-col  justify-start gap-3 py-4 mb-6 border border-slate-500 rounded-lg w-fit px-3">
             <li className="list-disc list-inside">
               <Link href="#programs" className="text-[13px] italic ">
                 List of Programs
@@ -91,14 +91,52 @@ const EsmUrp = () => {
                 </li>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="text-justify py-2 max-w-xl leading-8">
-                  The building degree programme of the university was
-                  established in the university in the year 2023 and it is
-                  designed to prepare students for careers in the building
-                  industry by providing a comprehensive education that emphasise
-                  both theoretical and practical knowledge in the construction,
-                  operation, maintenance and deconstruction of buildings that
-                  are compliant, safe, sustainable, and environmentally sound.
+                <p className="text-justify py-2 max-w-5xl leading-8">
+                  Estate Management is art and science of supervising the use,
+                  development and management of landed property, other natural
+                  resources and the built environment. The estate management
+                  programme is intended to prepare students to appreciate the
+                  complexity of legal, economic, technological and social
+                  impacts on the use, development and management of land and the
+                  environment. The emerging world trend in technological
+                  advancement and environmental concern, calls for the need to
+                  design responsive programmes for the training of future
+                  graduates in Estate Management. The degree envisaged is B. Sc.
+                  Estate Management and Valuation. It has taken the University
+                  of Abuja too long a time to establish a department of Estate
+                  Management and Valuation. It is therefore heart-warming that
+                  in the preceding expansion programme of the University,
+                  Department of Estate Management and Valuation received
+                  attention. The senate of the University supported the
+                  University Management proposal of the establishment of
+                  Department of Estate Management and Valuation in the
+                  University and 2023/2024 was approved as the commencement
+                  period. The programme is structured to equip the graduates
+                  with the requisite academic and practical knowledge to meet
+                  the mission of the programme which is to educate and train
+                  graduates for sound scientific, technical, entrepreneurial and
+                  managerial skills for estate surveying and valuation practice
+                  for the benefit and satisfaction of clients and the society.
+                  In pursuit of this mission, courses have been drawn from other
+                  disciplines such as Economics, Agriculture, Physical Sciences,
+                  Accounting and Management, Computer science, Law and Social
+                  Sciences as well as other disciplines in the Environmental
+                  Sciences. Courses offered in the Department are categorized
+                  into three, namely compulsory (C), required (R) and elective
+                  (E) courses. The department has 106 units of core courses, 87
+                  units of required courses and 20 units of elective courses
+                  available for offering. Students are expected to take all the
+                  compulsory and required courses compulsorily and take the
+                  specified minimum units of elective courses. For graduation,
+                  the student must have taken and passed all the compulsory and
+                  required courses as well as the specified minimum 12 units of
+                  electives with total credit units not less than the minimum
+                  specified units for graduation in the University Academic
+                  Regulation. Department of Estate Management and Valuation
+                  Programme is marketable in terms of patronage and enrolment as
+                  well as job opportunities for the products. The products are
+                  to be functional and useful and are hopefully to be in demand
+                  in national affairs as well as international services.
                 </p>
 
                 <Link href="/estate-management-urban-and-regional-planning/#resources">
@@ -115,14 +153,22 @@ const EsmUrp = () => {
                 </li>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="text-justify py-2 max-w-xl leading-8">
-                  The building degree programme of the university was
-                  established in the university in the year 2023 and it is
-                  designed to prepare students for careers in the building
-                  industry by providing a comprehensive education that emphasise
-                  both theoretical and practical knowledge in the construction,
-                  operation, maintenance and deconstruction of buildings that
-                  are compliant, safe, sustainable, and environmentally sound.
+                <p className="text-justify py-2 max-w-3xl leading-8">
+                  The Bachelor of Science Urban and Regional Planning (B.Sc.
+                  URP) is a five years professional program that offers training
+                  to students and equips them with the knowledge base and
+                  analytical as well as design skills to address contemporary
+                  issues that affect the quality of life in humansettlements.
+                  This is achieved through rigorous training in the production
+                  of master plans, regional plans, sector plans, city plans and
+                  neighbourhood plans. The curriculum consists of planning
+                  lecture courses, studios, and professional planning practice
+                  courses that give students real-world planning experience.
+                  Graduates of the program qualify for positions in a variety of
+                  public and private organizations, including local planning
+                  authorities, state urban development boards and national
+                  planning commission and departments; non-profit organizations,
+                  and private sector planning and development firms.
                 </p>
 
                 <Link href="/estate-management-urban-and-regional-planning/#resources">

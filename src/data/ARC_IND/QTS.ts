@@ -1,0 +1,86 @@
+export const QTS_staff_list: StaffDetails[] = [
+    {
+        name: "Dr. ADEBIYI Ranti Taibat",
+        image: "/BQS/taibat.jpg",
+        rank: "Adjunct Senior Lecturer",
+        programme: "Quantity surveying",
+        email: "",
+        tel: "08032630058",
+        googleScholar:
+            "https://scholar.google.com/citations?user=2zRvBHUAAAAJ&hl=en",
+        otherLinks: [
+        ],
+        qualifications:
+            "B. Tech Quantity Surveying (FUT Minna), MBA (Unilorin), M.Sc and PhD (OAU, Ile-Ife), FNIQS, RQS",
+    },
+    {
+        name: "Dr. ADENIRAN Wasiu",
+        image: "",
+        rank: "Adjunct Senior Lecturer ",
+        programme: "Quantity surveying",
+        email: "uniabuja.edu.ng",
+        qualifications: "B.Sc., M.Sc. Quantity Surveying, PhD, FNIQS, RQS",
+        tel: "",
+        googleScholar: "",
+        otherLinks: [],
+    },
+    {
+        name: "ALIYU Habeeb Dayo",
+        image: "/BQS/habeebDayo.jpg",
+        rank: "Lecturer II",
+        programme: "Quantity surveying",
+        email: "aliyu.habeeb@uniabuja.edu.ng",
+        tel: "",
+        otherLinks: [],
+        qualifications: "B.Tech., M.Tech Quantity Surveying, MNIQS, RQS",
+        googleScholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=6vGFndUAAAAJ&citation_for_view=6vgfndUAAAAJ:YsMSGLbcyi4C",
+
+    },
+    {
+        name: "UZOMA N. Clementina",
+        image: "/BQS/clementinaUzoma.jpg",
+        rank: "Lecturer II",
+        programme: "Quantity surveying",
+        email: "clementina.uzoma@uniabuja.edu.ng",
+        tel: "07037858822",
+        qualifications: "B.Tech., M.Tech Quantity Surveying, MNIQS, RQS",
+        googleScholar: "",
+        otherLinks: [],
+
+    },
+    {
+        name: "MUHAMMAD Zulfat Omobolanle",
+        image: "/BQS/zulfatMuhammadjpg.jpg",
+        rank: "Graduate Assistant",
+        programme: "Quantity surveying",
+        email: "muhammad.zulfat@uniabuja.edu.ng",
+        tel: "08105952218",
+        qualifications:
+            "B.Sc. Quantity Surveying, M.Sc. (in view) Quantity Surveying, PNIQS",
+        googleScholar: "",
+        otherLinks: [],
+    },
+    {
+        name: "FARUQ Mustapha Yusuf ",
+        image: "/BQS/farukMustapha.jpg",
+        rank: "Graduate Assistant",
+        programme: "Quantity surveying",
+        email: "mustapha.faruq@uniabuja.edu.ng",
+        tel: "08130431286",
+        qualifications:
+            "B.Sc. Quantity Surveying, M.Sc. (in view) Quantity Surveying",
+        googleScholar: "",
+        otherLinks: [],
+    },
+    {
+        name: "ABDULRAHMON Nurudeen ",
+        image: "/BQS/abdulrahmonNurudeen.jpg",
+        rank: "Technologist 1",
+        programme: "Quantity surveying",
+        email: "nurudeen.abdulrahmon@uniabuja.edu.ng",
+        tel: "07037173927",
+        qualifications: "B.Sc., PGD. Quantity surveying",
+        googleScholar: "",
+        otherLinks: [],
+    },
+]
