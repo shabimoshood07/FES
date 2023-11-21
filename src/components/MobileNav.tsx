@@ -34,7 +34,8 @@ const MobileNav = () => {
       <NavbarContent className="pr-3 mx-auto" justify="center">
         <NavbarBrand className="mx-auto">
           <Image
-            src="https://www.uniabuja.edu.ng/images/logo.png"
+            // src="https://www.uniabuja.edu.ng/images/logo.png"
+            src="https://www.uniabuja.edu.ng/uploads/settings/16815763039597.png"
             height={400}
             width={400}
             alt="uniabuja logo"
@@ -69,7 +70,10 @@ const MobileNav = () => {
             <Divider />
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="nav-sublink w-full text-sm relative" href="architecture-and-industrial-design">
+              <Link
+                className="nav-sublink w-full text-sm relative"
+                href="architecture-and-industrial-design"
+              >
                 Architecture / Industrial design
               </Link>
             </NavbarMenuItem>
@@ -84,14 +88,20 @@ const MobileNav = () => {
             </NavbarMenuItem>
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="w-full text-sm nav-sublink relative" href="estate-management-urban-and-regional-planning">
+              <Link
+                className="w-full text-sm nav-sublink relative"
+                href="estate-management-urban-and-regional-planning"
+              >
                 Estate management / Urban and regional planning
               </Link>
             </NavbarMenuItem>
 
             <NavbarMenuItem className="py-2 pl-3">
-              <Link className="w-full text-sm nav-sublink relative" href="surveying-and-geoinformatics
-              ">
+              <Link
+                className="w-full text-sm nav-sublink relative"
+                href="surveying-and-geoinformatics
+              "
+              >
                 Surveying / Geoinformatics
               </Link>
             </NavbarMenuItem>
