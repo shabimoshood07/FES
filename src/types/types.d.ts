@@ -13,3 +13,10 @@ type StaffDetails = {
     qualifications: string
 
 }
+
+
+type Media = {
+    type: string
+    url: string
+    name: string
+}
