@@ -1,9 +1,4 @@
 import {
-  Dropdown,
-  DropdownTrigger,
-  Button,
-  DropdownMenu,
-  DropdownItem,
   NavbarMenuItem,
   Accordion,
   AccordionItem,

@@ -105,7 +105,7 @@ const BuildingQuantitySurveying = () => {
                   are compliant, safe, sustainable, and environmentally sound.
                 </p>
 
-                <Link href="/building-and-quantity-surveying/building">
+                <Link href="/building-and-quantity-surveying/#resources">
                   <Button>View Programme resources</Button>
                 </Link>
               </AccordionContent>
@@ -128,7 +128,7 @@ const BuildingQuantitySurveying = () => {
                   are compliant, safe, sustainable, and environmentally sound.
                 </p>
 
-                <Link href="/building-and-quantity-surveying/surveying">
+                <Link href="/building-and-quantity-surveying/#resources">
                   <Button>View Programme resources</Button>
                 </Link>
               </AccordionContent>

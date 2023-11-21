@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 const Explore = () => {
@@ -12,9 +13,14 @@ const Explore = () => {
           create, and you think globally.
         </p>
       </div>
-      <Button variant="default" className="w-full text-[20px] text-slate-100 bg-slate-950 my-4 py-4 h-fit max-w-md mx-auto block">
-        Explore the Faculty
-      </Button>
+      <Link href="/explore">
+        <Button
+          variant="default"
+          className="w-full text-[20px] text-slate-100 bg-slate-950 my-4 py-4 h-fit max-w-md mx-auto block"
+        >
+          Explore the Faculty
+        </Button>
+      </Link>
     </div>
   );
 };

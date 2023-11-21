@@ -8,7 +8,7 @@ export const HOD_profile =
     tel: "",
     googleScholar: "",
     otherLinks: [],
-    qualifications: "",
+    qualifications: "PhD, MSc, BSc, PGCert, HND, GradDipHE, FCIOB, MRICS, MNZIOB, MNIOB, MIMC Chartered Construction Manager, Building Professional & Quantity Surveyor",
 }
 
 
