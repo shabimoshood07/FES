@@ -13,7 +13,7 @@ export const BLD_staff_list: StaffDetails[] = [
     },
     {
         name: "Sanusi Abdulmutakabir",
-        image: "",
+        image: "/BQS/sanusi-mutakabir.jpg",
         rank: "Lecturer II",
         programme: "Building",
         email: "",
@@ -92,5 +92,16 @@ export const BLD_staff_list: StaffDetails[] = [
         googleScholar: "",
         otherLinks: [],
         qualifications: "BEng.,GMNSE, R.Engr (COREN) Aff. ASCE",
+    },
+    {
+        name: "Adejoh Ahmodu Adaji",
+        image: "/BQS/",
+        rank: "",
+        programme: "Building",
+        email: "",
+        tel: "",
+        googleScholar: "https://scholar.google.com/citations?hl=en&user=hsgTmqcAAAAJ",
+        otherLinks: [],
+        qualifications: "B.Sc.(ABU Zaria); M.Tech. (FUT Minna); PhD (UTHM Malaysia); Mniob; Regd Builder",
     },
 ]

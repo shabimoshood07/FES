@@ -109,7 +109,7 @@ export const SVG_staff_list: StaffDetails[] = [
         tel: "08148618029",
         googleScholar: "",
         otherLinks: [],
-        qualifications: "National Diploma, Land Surveying(KP Ilorin), Higher National Diploma, Surveying and Geoinformatics (KP Ilorin)",
+        qualifications: "BSc. Surveying and Geoinformatics(In View) (LCU Ibadan), National Diploma, Surveying and Geoinformatics(KP Ilorin), Higher National Diploma, Surveying and Geoinformatics (KP Ilorin)",
     },
     {
         name: "HARUNA PATRICK",

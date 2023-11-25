@@ -83,7 +83,7 @@ export const ESM_staff_list: StaffDetails[] = [
     rank: "Graduate Assistant",
     programme: "Estate Management",
     email: "Saniadamu126@gmail.com",
-    tel: "+2348093536354",
+    tel: "08039596954",
     googleScholar: "#",
     otherLinks: [],
     qualifications: "B.Tech (ATBU), M.Tech(In View) (ATBU)",

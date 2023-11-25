@@ -15,7 +15,7 @@ export const QTS_staff_list: StaffDetails[] = [
     },
     {
         name: "Dr. ADENIRAN Wasiu",
-        image: "",
+        image: "/BQS/adeniran-wasiu.jpg",
         rank: "Adjunct Senior Lecturer ",
         programme: "Quantity surveying",
         email: "uniabuja.edu.ng",
@@ -56,7 +56,7 @@ export const QTS_staff_list: StaffDetails[] = [
         email: "muhammad.zulfat@uniabuja.edu.ng",
         tel: "08105952218",
         qualifications:
-            "B.Sc. Quantity Surveying, M.Sc. (in view) Quantity Surveying, PNIQS",
+            "B.Sc. Quantity Surveying, M.Sc. (in view) Quantity Surveying, MNIQS",
         googleScholar: "",
         otherLinks: [],
     },
@@ -94,4 +94,5 @@ export const QTS_staff_list: StaffDetails[] = [
         googleScholar: "",
         otherLinks: [],
     },
+
 ]
