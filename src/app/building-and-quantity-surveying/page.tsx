@@ -146,7 +146,7 @@ const BuildingQuantitySurveying = () => {
             Head of Department
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
-            <StaffCardDeptPage staff={HOD_profile} />;
+            <StaffCardDeptPage staff={HOD_profile} />
           </div>
           <h1 className="mt-8 text-[20px] ml-6 font-semibold">Building</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">

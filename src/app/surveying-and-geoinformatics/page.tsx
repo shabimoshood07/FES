@@ -118,7 +118,7 @@ const SurveyingGeoinformatics = () => {
             Head of Department
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
-            <StaffCardDeptPage staff={HOD_profile} />;
+            <StaffCardDeptPage staff={HOD_profile} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 max-w-[500px] md:max-w-none mx-auto gap-8 mt-4">
             {SVG_staff_list.map((staff, index) => {

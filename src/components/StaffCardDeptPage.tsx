@@ -22,7 +22,7 @@ const StaffCardDeptPage = ({ staff }: { staff: StaffDetails }) => {
           <Image src={staff.image} width={500} height={500} alt={staff.name} className="h-[250px] max-w-[300px] w-full rounded-md"/>
           <div>
             <p className=" text-[13px] italic text-left">{staff.rank}</p>
-            <h1 className=" text-[13px] bold text-left font-bold mt-6">{staff.name}</h1>
+            <h1 className=" text-[13px] bold text-left font-bold mt-4">{staff.name}</h1>
           </div>
         </div>
       </div>
