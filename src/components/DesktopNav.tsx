@@ -49,6 +49,7 @@ const DesktopNav = () => {
             height={400}
             width={400}
             alt="uniabuja logo"
+            className="h-fit"
           />
         </NavbarBrand>
       </NavbarContent>
