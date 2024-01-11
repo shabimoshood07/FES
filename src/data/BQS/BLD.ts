@@ -2,6 +2,7 @@ export const BLD_staff_list: StaffDetails[] = [
 
     {
         name: "AGBOOLA Shamsudeen A",
+        about: "An experienced professional in construction technology and management, with history of working in various establishment. An educationist who hold a B.Tech   degree in building from Abubakar Tafawa Balewa University, M.Tech degree in construction technology and currently  undergoing Phd. in construction technology in the same citadel of learning. Skilled in teaching, research, curriculum development and project management and design. Proficient in using software such as AutoCad, Revit, Sketch up, primavera, helioscope, homer, micro soft project. With research interest on concrete technology, renewable construction materials, alternative construction material and resource utilization, green and sustainable building construction and construction management.",
         image: "/BQS/shamsudeen.jpg",
         rank: "Lecturer II / Coordinator",
         programme: "Building",
@@ -24,6 +25,7 @@ export const BLD_staff_list: StaffDetails[] = [
     },
     {
         name: "Shabi, Moshood Olawale",
+        about: "",
         image: "/BQS/moshood.jpg",
         rank: "Assistant Lecturer",
         programme: "Building",

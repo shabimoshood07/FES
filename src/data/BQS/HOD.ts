@@ -1,7 +1,7 @@
 export const HOD_profile =
 {
-    name: "Prof. James O. B. Rotimi",
-    image: "/BQS/HOD-BQS.png",
+    name: "HOD",
+    image: "",
     rank: "Head of Department",
     programme: "Building/QS",
     email: "#",

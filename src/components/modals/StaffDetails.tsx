@@ -28,7 +28,7 @@ const StaffDetails = ({
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <SheetHeader>
-          <SheetTitle className="md:flex gap-6 ">
+          <SheetTitle className="md:flex gap-6 mb-3 md:mb-6">
             <div className="relative w-full md:min-w-[300px] max-w-[500px] h-[300px] rounded-2xl mt-6 md:mt-0 overflow-hidden min-[500px]:h-[400px] md:h-[300px] md:w-[300px]">
               <Image
                 src={staffDetails.image}
@@ -50,6 +50,13 @@ const StaffDetails = ({
               </h1>
             </div>
           </SheetTitle>
+
+          {/* ABOUT */}
+          {staffDetails.about && (
+            <p className="font-normal text-[14px] text-justify border-t-2 pt-2">
+              {staffDetails.about}
+            </p>
+          )}
           {/* CONTACT */}
           <div className="mt-6">
             <p className="text-left text-xl md:text-2xl underline font-bold mb-4">

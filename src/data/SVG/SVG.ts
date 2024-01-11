@@ -73,7 +73,7 @@ export const SVG_staff_list: StaffDetails[] = [
         qualifications: "National Diploma, Surveying and Geoinformatics, B.Tech. Surveying and Geomatics, M.Sc. Surveying and Geomatics",
     },
     {
-        name: "ABDULSALAM MOHMUD AHMED",
+        name: "ABDULSALAM MAHMUD AHMED",
         image: "/SVG/mohmud-ahmed.jpg",
 
         rank: "Graduate Assistance",

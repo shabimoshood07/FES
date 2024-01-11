@@ -1,6 +1,7 @@
 export const HOD_profile =
 {
     name: "Dr. IDREES OLUDARE MOHAMMED",
+    about: "An experienced Lecturer in Geospatial Information Science (GIS) and remote sensing with an established history of working in various universities. Skilled in teaching, research, curriculum development and surveying project design and management. A sound education professional with a Doctor of Philosophy in GIS and Geomatic Engineering and a Master in Remote Sensing & GIS from Universiti Putra Malaysia. Proficient in using geospatial technologies, including GNSS, UAV, laser scanners, close-range photogrammetry, and satellite data to deliver geospatial-based products. With research focus on remote sensing of Earth observation, environmental and geohazard modelling, computational intelligence, natural resources management, and climate change.",
     image: "/SVG/oludare-mohammed.jpg",
     rank: "HOD / Senior Lecturer",
     programme: "Surveying and Geoinformatics",

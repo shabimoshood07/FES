@@ -1,5 +1,6 @@
 type StaffDetails = {
     name: string
+    about?: string
     image: string
     rank: string
     programme: string

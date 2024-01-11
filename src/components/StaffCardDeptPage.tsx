@@ -14,15 +14,20 @@ const StaffCardDeptPage = ({ staff }: { staff: StaffDetails }) => {
         onClick={() => setOpen(true)}
       >
         <div className="flex flex-col justify-start items-start gap-4 ">
-          {/* <Avatar className="h-20 w-20 shadow-lg border-2 border-slate-950">
-            <AvatarImage src={staff.image} />
-            <AvatarFallback>{staff.name}</AvatarFallback>
-          </Avatar> */}
-
-          <Image src={staff.image} width={500} height={500} alt={staff.name} className="h-[250px] max-w-[300px] w-full rounded-md"/>
+          <div className="relative w-full h-[300px] md:h-[250px] rounded-lg overflow-hidden">
+            <Image
+              src={staff.image}
+              width={500}
+              height={500}
+              alt={staff.name}
+              className="h-full w-full absolute top-0 left-0 object-cover"
+            />
+          </div>
           <div>
             <p className=" text-[13px] italic text-left">{staff.rank}</p>
-            <h1 className=" text-[13px] bold text-left font-bold mt-4">{staff.name}</h1>
+            <h1 className=" text-[13px] bold text-left font-bold mt-4">
+              {staff.name}
+            </h1>
           </div>
         </div>
       </div>
