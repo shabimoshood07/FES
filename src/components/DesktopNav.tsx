@@ -46,12 +46,13 @@ const DesktopNav = () => {
       <NavbarContent className="pr-3 mx-auto" justify="center">
         <NavbarBrand className="mx-auto h-[70px]">
           <Image
-            src="https://www.uniabuja.edu.ng/images/logo.png"
+            src="/logo.png"
+            // src="https://www.uniabuja.edu.ng/images/logo.png"
             // src="https://www.uniabuja.edu.ng/uploads/settings/16815763039597.png"
             height={400}
             width={400}
             alt="uniabuja logo"
-            className="h-fit"
+            className="h-full"
           />
         </NavbarBrand>
       </NavbarContent>
